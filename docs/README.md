@@ -1,18 +1,46 @@
-# Jinshu Docs Index
+# Jinshu Documentation
 
-## Current Docs
-- `vision.md`: Product mission, target users, MVP scope, and success metrics.
-- `product-process.md`: End-to-end process from idea to published product with AI roles by phase.
-- `prd-v0.md`: MVP functional/non-functional requirements and acceptance criteria.
-- `launch-roadmap-4-weeks.md`: Week-by-week execution and launch plan.
+## Structure
 
-## How to Use
-1. Align on `vision.md` first.
-2. Use `product-process.md` as the governance workflow.
-3. Execute build work against `prd-v0.md` requirements.
-4. Track weekly delivery using `launch-roadmap-4-weeks.md`.
+- `01-product`: product definition, scope, and decision baseline.
+- `02-architecture`: technical architecture and design decisions.
+- `03-development`: engineering execution and testing strategy.
+- `04-release`: launch and post-launch operation documents.
 
-## Next Docs To Add
-- `architecture.md`
-- `launch-checklist.md`
-- `pricing-experiments.md`
+## Read Order (Onboarding)
+
+1. `01-product/01-vision.md`
+2. `01-product/02-product-process.md`
+3. `01-product/03-story-map.md`
+4. `01-product/04-scope-matrix.md`
+5. `01-product/05-prd-v0.md`
+6. `01-product/06-prd-decision-package-v1.md`
+7. `01-product/07-decision-log.md`
+8. `02-architecture/01-platform-tradeoffs.md`
+9. `03-development/01-acceptance-tests-v1.md`
+10. `04-release/01-launch-roadmap-4-weeks.md`
+
+## Evolution Order (Delivery Phases)
+
+1. Product definition: `01-product/*`
+2. Architecture decisions: `02-architecture/*`
+3. Development execution: `03-development/*`
+4. Publish and iteration: `04-release/*`
+
+## Naming Rules
+
+- Prefix each document with a numeric order: `NN-topic.md`.
+- Keep one responsibility per document.
+- Prefer updating existing docs over creating overlapping versions.
+
+## AI Context Bundle (Recommended)
+
+When asking AI to implement work, include these files first:
+
+- `01-product/01-vision.md`
+- `01-product/04-scope-matrix.md`
+- `01-product/05-prd-v0.md`
+- `01-product/07-decision-log.md`
+- `02-architecture/01-platform-tradeoffs.md`
+- `03-development/01-acceptance-tests-v1.md`
+- Relevant phase file (for example `02-architecture/*` or `03-development/*`)
